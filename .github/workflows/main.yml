@@ -31,13 +31,7 @@ jobs:
           # Relative path under $GITHUB_WORKSPACE to place the repository
           path: "toShade" # optional
       - run: cd /home/runner/work/discord4j-shaded/discord4j-shaded/toShade
-      - name: Shade the jar, man!
-        # You may pin to the exact commit or the version.
-        # uses: gradle/gradle-build-action@e88ed3e650b26bd116cfee53cf198c1f6856682d
-        uses: gradle/gradle-build-action@v2.2.0
-        with:
-          gradle-version: "7.4.2"
-          arguments: "shadowJar"
+      - run: ./gradlew shadowJar
       - name: Upload the shaded jar
         uses: actions/upload-artifact@v3.1.0
         with:
