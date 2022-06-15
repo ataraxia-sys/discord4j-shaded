@@ -1,2 +1,5 @@
-# discord4j-shaded
-Discord4J, but c̶o̶l̶o̶r̶e̶d̶ ̶i̶n̶ ̶w̶i̶t̶h̶ ̶a̶ ̶p̶e̶n̶c̶i̶l̶  shaded with its dependencies.
+
+<logo goes here, idiot>
+
+It's like Discord4J, but colored in with a pencil! <br/>
+<b>If you want builds, check out the Actions page. This is completely automated.</b>
