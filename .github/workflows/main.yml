@@ -37,6 +37,7 @@ jobs:
         with:
           # Path to the root directory of the build
           build-root-directory: "~/toShade" # optional
+          gradle-version: "7.4.2"
           arguments: "shadowJar"
       - name: Upload the shaded jar
         uses: actions/upload-artifact@v3.1.0
