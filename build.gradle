@@ -1,0 +1,24 @@
+plugins {
+	id 'com.github.johnrengelman.shadow' version '5.2.0'
+	id 'java'
+}
+
+repositories {
+	     mavenCentral()
+}
+
+dependencies {
+	     implementation 'com.discord4j:discord4j-core:+'
+	     implementation 'com.discord4j:discord4j-voice:+'
+	     implementation 'com.discord4j:discord4j-command:+'
+	     implementation 'com.discord4j:discord4j-common:+'
+	     implementation 'com.discord4j:discord4j-gateway:+'
+	     implementation 'com.discord4j:discord4j-rest:+'
+	     implementation 'com.discord4j:stores-jdk:+'
+	     implementation 'com.discord4j:stores-api:+'
+}
+
+shadowJar {
+	  relocate 'io.netty', 'com.discord4j.shaded.io.netty'
+	  relocate 'com.fasterxml', 'com.discord4j.shaded.com.fasterxml'
+}
