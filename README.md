@@ -1,5 +1,4 @@
 
-<logo goes here, idiot>
+<img style="img { width: 128px; height: 128px; }"src="https://github.com/info-ch4n/discord4j-shaded/raw/main/discord4j-shaded.png"/>
 
-It's like Discord4J, but colored in with a pencil! <br/>
 <b>If you want builds, check out the Actions page. This is completely automated.</b>
